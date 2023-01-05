@@ -130,13 +130,43 @@ table {
 
 /* CUSTOM CSS */
 
+/* fonts import */
+
+@import url("https://fonts.googleapis.com/css2?family=Cardo&family=Oswald&display=swap");
+
 /* variables */
 
 :root {
+  /* colors */
   --clr-blue-500: #3882f6;
   --clr-grey-200: #f9faf8;
   --clr-grey-500: #e5e7eb;
   --clr-grey-900: #1f2937;
+  /* font family */
+  --ff-heading: "Oswald", sans-serif;
+  --ff-paragraph: "Cardo", serif;
+  /* font size */
+  --fs-18: 1.125rem;
+  --fs-24: 1.5rem;
+  --fs-36: 2.25rem;
+  --fs-48: 3rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--ff-heading);
+}
+
+p,
+a,
+ul,
+ol,
+li {
+  font-family: var(--ff-paragraph);
 }
 
 .container {
@@ -149,19 +179,35 @@ header {
   background-color: var(--clr-grey-900);
 }
 
-.hero {
+.home-block {
+  padding: 75px 0;
+}
+
+.home-block__hero {
   background-color: var(--clr-grey-900);
 }
 
-.info {
+.home-block__info {
   background-color: var(--clr-grey-200);
 }
 
-.testimonial {
+.home-block__testimonial {
   background-color: var(--clr-grey-500);
 }
 
-.cta {
+.home-block__testimony {
+  font-size: var(--fs-36);
+  font-style: italic;
+  font-weight: 300;
+}
+
+.home-block__author {
+  font-size: var(--fs-18);
+  font-weight: 800;
+  text-align: right;
+}
+
+.home-block__cta {
   background-color: var(--clr-grey-200);
 }
 
